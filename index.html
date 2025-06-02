@@ -97,11 +97,11 @@
             margin: 2.1em 0 1.6em 0;
         }
         .domain-detection {
-            color: #1769c7;
-            font-size: 1.08rem;
+            color: #c44c4c !important;
+            font-size: 2em !important;
             text-align: center;
-            margin-bottom: 1.1em;
-            font-weight: bold;
+            margin-bottom: 1.2em;
+            font-weight: 700 !important;
         }
         .inquiry-form-section {
             margin: 2.7rem 0 0 0;
@@ -189,6 +189,9 @@
             .info-article {
                 font-size: 1.03rem;
             }
+            .domain-detection {
+                font-size: 1.5em !important;
+            }
         }
     </style>
 </head>
@@ -213,16 +216,12 @@
             Learn more: <a href="https://corelli.com/domains.html" target="_blank" rel="noopener">How to choose a great domain</a>
         </div>
         <div class="inquiry-banner">
-            <div>
-                <strong>The great domain name you just typed in is for sale!</strong><br>
-                <span>Please use the form below to Make an Offer! <br>
-                We offer excellent deals on all our domains.</span>
-            </div>
+            We offer excellent deals on all our domains.
         </div>
         <div class="domain-detection" id="domain-detect"></div>
         <section class="inquiry-form-section" id="inquiry-form">
-            <h3>Contact Us About the Domain You Want</h3>
-            <form class="inquiry-form" action="https://formspree.io/f/xqabkkev" method="POST" autocomplete="on">
+            <h3>Make Offer For The Domain Above</h3>
+            <form class="inquiry-form" action="https://formspree.io/f/mjkrbgez" method="POST" autocomplete="on">
                 <input type="hidden" id="domain" name="domain" value="">
                 <label for="name">Name *</label>
                 <input type="text" name="name" id="name" required autocomplete="name">
@@ -246,6 +245,8 @@
     <footer>
         &copy; 2025 Quality Aged Domains &ndash; Premium Names at Excellent Prices.
     </footer>
+    <!-- Hidden hits.sh counter -->
+    <img src="https://hits.sh/greatname.com.svg" style="display:none" alt="site visits" />
     <script>
         // Detect and display the domain that forwarded user to this page
         (function() {
@@ -256,7 +257,7 @@
             ];
             if (hostname && knownLandingDomains.indexOf(hostname) === -1) {
                 document.getElementById('domain-detect').textContent =
-                  "You are inquiring about: " + hostname;
+                  "Buy " + hostname;
                 // Fill hidden input for the form
                 document.getElementById('domain').value = hostname;
             }
