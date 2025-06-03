@@ -1,6 +1,6 @@
 # Greatname.com – Premium Domain Landing Page
 
-This is the landing page template for **greatname.com**, designed to showcase and sell premium domain names. The template features a clean, modern design, an inquiry form for potential buyers, and a hidden page visit counter using [hits.sh](https://hits.sh).
+This is the landing page template for **greatname.com**, designed to showcase and sell a curated collection of premium domain names. The template features a clean, modern design, an inquiry form for potential buyers, and a hidden page visit counter using [hits.sh](https://hits.sh).
 
 ## Features
 
