@@ -1,0 +1,421 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Greatname.com — Premium Domain For Sale</title>
+  <meta name="description" content="Greatname.com — premium, brandable .com ideal for naming agencies, branding platforms, marketplaces, venture studios and identity-first products. Submit an offer to purchase." />
+  <meta name="robots" content="index,follow" />
+  <link rel="canonical" href="https://greatname.com/" />
+  <meta name="theme-color" content="#0b2b2b" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Greatname.com — Premium Domain For Sale" />
+  <meta property="og:description" content="Greatname.com — brandable domain for naming agencies, brand marketplaces, creative studios and identity platforms. Contact domain@greatname.com" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://greatname.com/" />
+  <meta property="og:image" content="https://greatname.com/og-image.png" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Greatname.com — Premium Domain For Sale" />
+  <meta name="twitter:description" content="Greatname.com — brandable domain for naming, branding & creative platforms." />
+  <meta name="twitter:image" content="https://greatname.com/og-image.png" />
+
+  <link rel="icon" href="/favicon.ico" />
+  <link rel="alternate" hreflang="en" href="https://greatname.com/" />
+  <meta name="distribution" content="global" />
+  <meta name="rating" content="general" />
+
+  <style>
+    :root{
+      --max-w:1120px;
+      --bg-ink: #071019;
+      --bg-mid: #0f1f2a;
+      --panel: #ffffff;
+      --muted: #9fb1b6;
+      --accent: #ffd166;    /* warm spotlight */
+      --accent-2: #6ee7ff;  /* cool highlight */
+      --glass: rgba(255,255,255,0.02);
+      --radius:18px;
+      --shadow: 0 36px 120px rgba(2,8,12,0.6);
+      font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    }
+
+    *{box-sizing:border-box}
+    html,body{height:100%;margin:0}
+    body{
+      min-height:100vh;
+      display:flex;
+      align-items:flex-start;
+      justify-content:center;
+      padding:44px 20px;
+      color:var(--panel);
+      background:
+        radial-gradient(900px 300px at 12% 12%, rgba(110,231,255,0.03), transparent 12%),
+        linear-gradient(180deg,var(--bg-ink) 0%, var(--bg-mid) 60%);
+      -webkit-font-smoothing:antialiased;
+      -moz-osx-font-smoothing:grayscale;
+      line-height:1.45;
+      overflow-x:hidden;
+    }
+
+    /* Look chosen: "Spotlight Studio"
+       - dark, minimal stage with a soft spotlight band and floating mark tokens
+       - modern, editorial, works for naming/branding marketplaces and studios
+       - decorative elements are pointer-events:none
+    */
+    .bg { position:fixed; inset:0; z-index:0; pointer-events:none; overflow:visible; }
+
+    .spotlight {
+      position:fixed;
+      left:50%;
+      top:8%;
+      transform:translateX(-50%);
+      width:1100px;
+      height:320px;
+      z-index:0;
+      border-radius:20px;
+      background: radial-gradient(600px 260px at 50% 20%, rgba(255,209,102,0.06), rgba(110,231,255,0.02) 45%, transparent 60%);
+      mix-blend-mode:screen;
+      opacity:0.95;
+      pointer-events:none;
+      filter: blur(4px) saturate(110%);
+      box-shadow: inset 0 22px 56px rgba(0,0,0,0.32);
+    }
+
+    .floaters { position:fixed; inset:0; z-index:0; pointer-events:none; overflow:visible; }
+
+    .mark {
+      position:absolute;
+      width:84px;
+      height:84px;
+      background-size:contain;
+      background-repeat:no-repeat;
+      opacity:0.12;
+      will-change:transform,opacity;
+      filter: drop-shadow(0 20px 40px rgba(0,0,0,0.55));
+    }
+
+    @keyframes floaty {
+      0%{ transform: translateY(0) rotate(-6deg); }
+      50%{ transform: translateY(-20px) rotate(6deg); }
+      100%{ transform: translateY(0) rotate(-6deg); }
+    }
+
+    .container{
+      width:100%;
+      max-width:var(--max-w);
+      padding:36px;
+      border-radius:18px;
+      background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
+      box-shadow:var(--shadow);
+      border:1px solid rgba(255,255,255,0.03);
+      position:relative;
+      z-index:2;
+    }
+
+    header{ display:flex; gap:18px; align-items:center; justify-content:space-between; margin-bottom:10px; }
+    .brand{ display:flex; gap:14px; align-items:center; }
+    .logo{
+      width:92px;height:92px;border-radius:14px;
+      background:linear-gradient(135deg,var(--accent-2), var(--accent));
+      color:#052826; display:flex; align-items:center; justify-content:center;
+      font-weight:900; font-size:20px; flex-shrink:0;
+      box-shadow: 0 14px 40px rgba(0,0,0,0.5);
+    }
+
+    h1{ margin:0; font-size:28px; color:var(--panel); }
+    p.lead{ margin:6px 0 0; color:var(--muted); font-size:14px; max-width:780px; }
+
+    .grid{ display:grid; grid-template-columns: 1fr 360px; gap:26px; align-items:start; margin-top:18px; }
+
+    .hero {
+      padding:22px; border-radius:14px; color:var(--panel);
+      background: linear-gradient(90deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
+      border:1px solid rgba(255,255,255,0.03);
+      display:flex; gap:18px; align-items:center; justify-content:space-between;
+    }
+    .hero h2{ margin:0 0 8px 0; font-size:20px; color:var(--accent); }
+    .hero p{ margin:0; color:var(--muted); }
+
+    .panel {
+      background: rgba(255,255,255,0.02);
+      color:var(--panel);
+      padding:20px;
+      border-radius:12px;
+      box-shadow: 0 18px 52px rgba(0,0,0,0.45);
+      border:1px solid rgba(255,255,255,0.03);
+    }
+
+    h2.section{ margin-top:0; font-size:18px; color:var(--accent-2); }
+    .features ul{ margin:0; padding-left:18px; color:var(--muted); }
+    .features li{ margin-bottom:10px; }
+
+    .samples { display:flex; gap:12px; margin-top:12px; flex-wrap:wrap; }
+    .sample {
+      min-width:140px;
+      padding:12px;
+      border-radius:12px;
+      background: rgba(255,255,255,0.02);
+      border:1px solid rgba(255,255,255,0.03);
+      color:var(--muted);
+      font-weight:700;
+      text-align:center;
+    }
+
+    .cta-row{ display:flex; gap:12px; margin-top:16px; flex-wrap:wrap; align-items:center; }
+    .btn{
+      display:inline-flex; gap:10px; align-items:center; padding:10px 16px; border-radius:999px; font-weight:800; cursor:pointer; text-decoration:none; border:0;
+    }
+    .btn-primary{ background: linear-gradient(90deg,var(--accent), var(--accent-2)); color:#042826; box-shadow: 0 14px 44px rgba(0,0,0,0.5); }
+    .btn-ghost{ background:transparent; border:1px solid rgba(255,255,255,0.06); color:var(--panel); }
+
+    .contact-card{ position:sticky; top:28px; align-self:start; background: rgba(255,255,255,0.02); padding:18px; border-radius:12px; border:1px solid rgba(255,255,255,0.03); box-shadow:0 14px 36px rgba(0,0,0,0.5); max-width:360px; color:var(--panel); }
+
+    label{ display:block; font-size:13px; color:var(--muted); margin-bottom:6px; }
+    input, textarea {
+      width:100%;
+      padding:10px 12px;
+      border-radius:8px;
+      border:1px solid rgba(255,255,255,0.06);
+      background: rgba(0,0,0,0.35);
+      color:var(--panel);
+      font-size:14px;
+      margin-bottom:12px;
+    }
+    textarea{ min-height:110px; resize:vertical; }
+
+    footer{ margin-top:18px; color:var(--muted); font-size:13px; text-align:center }
+
+    @media (max-width:980px){
+      .grid{ grid-template-columns: 1fr; gap:18px; }
+      .contact-card{ position:relative; top:auto; width:100%; max-width:none; }
+      .container{ padding:24px; }
+      .spotlight, .floaters { display:none; }
+      .logo{ width:76px; height:76px; border-radius:12px; }
+    }
+  </style>
+
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@graph":[
+      {
+        "@type":"WebSite",
+        "url":"https://greatname.com",
+        "name":"Greatname.com",
+        "description":"Greatname.com — premium domain for naming agencies, brand marketplaces, creative studios and identity platforms."
+      },
+      {
+        "@type":"Organization",
+        "name":"Greatname.com",
+        "url":"https://greatname.com",
+        "contactPoint":[
+          {
+            "@type":"ContactPoint",
+            "contactType":"sales",
+            "email":"domain@greatname.com"
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+  <div class="bg" aria-hidden="true">
+    <div class="spotlight" aria-hidden="true"></div>
+    <div class="floaters" id="floaters" aria-hidden="true"></div>
+  </div>
+
+  <main class="container" role="main" aria-labelledby="main-heading">
+    <header>
+      <div class="brand">
+        <div class="logo" aria-hidden="true">GN</div>
+        <div>
+          <h1 id="main-heading">Greatname.com</h1>
+          <p class="lead">Premium domain for naming agencies, brand marketplaces, creative studios and identity platforms.</p>
+        </div>
+      </div>
+
+      <div style="text-align:right">
+        <div style="color:var(--muted);font-size:13px">For inquiries</div>
+        <div style="font-weight:800;color:var(--accent)"><a href="mailto:domain@greatname.com" style="color:inherit;text-decoration:none">domain@greatname.com</a></div>
+      </div>
+    </header>
+
+    <section class="grid" aria-label="Main content">
+      <div>
+        <div class="hero" role="note" aria-live="polite" aria-labelledby="hero-title">
+          <div>
+            <h2 id="hero-title">A memorable, versatile .com for brand-first businesses</h2>
+            <p>Greatname.com is short, descriptive and instantly brandable — ideal for agencies that sell names, marketplaces for domains & brands, naming SaaS, creative consultancies and identity-first startups.</p>
+
+            <div class="cta-row">
+              <a class="btn btn-primary" href="#" id="inquireBtn">Make an Offer</a>
+              <a class="btn btn-ghost" href="mailto:domain@greatname.com?subject=Domain%20Offer%20-%20Greatname.com">Email Now</a>
+            </div>
+          </div>
+
+          <div style="min-width:220px; text-align:center">
+            <div style="color:var(--muted); font-size:13px">Domain</div>
+            <div style="font-weight:900; font-size:18px; margin-top:6px">Greatname.com</div>
+            <div style="color:var(--muted); font-size:13px; margin-top:8px">Serious offers only.</div>
+          </div>
+        </div>
+
+        <article class="panel" aria-labelledby="why-title" style="margin-top:18px">
+          <h2 id="why-title" class="section">Why Greatname.com?</h2>
+          <p class="lead">Short, authoritative and versatile — works for agencies, marketplaces and products where the name itself is central to the proposition.</p>
+
+          <div class="features" style="margin-top:12px">
+            <ul>
+              <li>Clear positioning — signals naming, branding and identity services</li>
+              <li>Works for marketplaces, SaaS naming tools, consultancies and creative studios</li>
+              <li>Brandable across web, social, email, portfolios and marketing campaigns</li>
+            </ul>
+          </div>
+
+          <div class="samples" aria-hidden="false">
+            <div class="sample">Naming Agency / Consultancy</div>
+            <div class="sample">Brand & Domain Marketplace</div>
+            <div class="sample">SaaS Naming & Identity Tools</div>
+            <div class="sample">Portfolio / Creative Studio</div>
+          </div>
+        </article>
+
+        <article class="panel" style="margin-top:18px" aria-labelledby="about-title">
+          <h3 id="about-title" style="margin-top:0">About this domain</h3>
+          <p class="lead">Greatname.com is a premium .com available for transfer.</p>
+
+          <ul style="color:var(--muted);margin-top:12px">
+            <li>Well-suited to founders, agencies, marketplaces, creative teams and product builders</li>
+            <li>Useful for integrations with marketplaces, invoice/escrow partners, licensing and go-to-market channels</li>
+            <li>We use escrow to ensure a smooth, secure transfer for both buyer and seller.</li>
+          </ul>
+
+          <div class="resources" aria-labelledby="resources-title" style="margin-top:12px; border-top:1px dashed rgba(255,255,255,0.03); padding-top:12px">
+            <div id="resources-title" style="font-weight:800; margin-bottom:8px">Helpful resource</div>
+            <div><a href="https://corelli.com/domains.html" target="_blank" rel="noopener noreferrer" style="color:var(--accent-2)">How To Choose A Domain Name</a></div>
+          </div>
+        </article>
+      </div>
+
+      <aside class="contact-card" aria-label="Contact & offer">
+        <div>
+          <h3 style="margin-top:0">Contact & Offer</h3>
+          <p style="margin-top:6px;color:var(--muted)">Submit an offer — this form opens your email client with the details prefilled. Or email <a href="mailto:domain@greatname.com" style="color:var(--accent)">domain@greatname.com</a>.</p>
+
+          <form id="inquiryForm" onsubmit="handleSubmit(event)" aria-label="Domain offer form">
+            <label for="name">Your name</label>
+            <input id="name" name="name" type="text" placeholder="Jane Doe" required />
+
+            <label for="email">Your email</label>
+            <input id="email" name="email" type="email" placeholder="you@example.com" required />
+
+            <label for="offer">Your offer (USD)</label>
+            <input id="offer" name="offer" type="text" placeholder="Enter your offer (USD)" required />
+
+            <label for="company">Company (optional)</label>
+            <input id="company" name="company" type="text" placeholder="Your company or organization" />
+
+            <label for="country">Country</label>
+            <input id="country" name="country" type="text" placeholder="Your country" required />
+
+            <label for="phone">Phone number (optional)</label>
+            <input id="phone" name="phone" type="tel" />
+
+            <label for="message">Message (questions, timeline, escrow preference)</label>
+            <textarea id="message" name="message" placeholder="Hi — I'm submitting an offer for Greatname.com. Please share transfer instructions and next steps."></textarea>
+
+            <button class="btn btn-primary" type="submit" style="width:100%; margin-top:6px">Send Offer</button>
+          </form>
+
+          <footer style="margin-top:10px; text-align:left; color:var(--muted); font-size:13px">
+            Prefer direct email? <a href="mailto:domain@greatname.com" style="color:var(--accent)">domain@greatname.com</a>
+          </footer>
+        </div>
+      </aside>
+    </section>
+
+    <footer>
+      &copy; 2025 Greatname.com. All rights reserved.
+    </footer>
+  </main>
+
+  <script>
+    // floating marks (badge, spark, dot, ribbon) as inline SVG data URIs
+    (function placeFloaters(){
+      const layer = document.getElementById('floaters');
+      if(!layer) return;
+      const svgs = {
+        badge: encodeURIComponent(`<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><circle cx='32' cy='24' r='16' fill='%23FFD166'/><path d='M20 46l12-6 12 6v12H20z' fill='%236ee7ff' opacity='0.95'/></svg>`),
+        spark: encodeURIComponent(`<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48'><path d='M24 4l4 10 10 4-10 4-4 10-4-10-10-4 10-4z' fill='%23FFD166' opacity='0.95'/></svg>`),
+        ribbon: encodeURIComponent(`<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48'><rect x='6' y='6' width='36' height='26' rx='4' fill='%236ee7ff' opacity='0.9'/></svg>`),
+        dot: encodeURIComponent(`<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><circle cx='12' cy='12' r='10' fill='%23ffffff' opacity='0.06'/></svg>`)
+      };
+
+      const items = [
+        {svg:svgs.badge, left:'8%', top:'18%', size:96, dur:9800},
+        {svg:svgs.spark, left:'78%', top:'16%', size:76, dur:11000},
+        {svg:svgs.ribbon, left:'48%', top:'66%', size:74, dur:10000},
+        {svg:svgs.dot, left:'86%', top:'54%', size:64, dur:12000}
+      ];
+
+      items.forEach(it=>{
+        const el = document.createElement('div');
+        el.className = 'mark';
+        el.style.left = it.left;
+        el.style.top = it.top;
+        el.style.width = it.size + 'px';
+        el.style.height = it.size + 'px';
+        el.style.backgroundImage = `url("data:image/svg+xml;utf8,${it.svg}")`;
+        el.style.animation = `floaty ${it.dur}ms ease-in-out ${Math.random()*1200}ms infinite`;
+        el.style.opacity = 0.06 + Math.random()*0.18;
+        layer.appendChild(el);
+      });
+    })();
+
+    // form -> mailto composer
+    function handleSubmit(e){
+      e.preventDefault();
+      const name = document.getElementById('name').value.trim();
+      const email = document.getElementById('email').value.trim();
+      const offer = document.getElementById('offer').value.trim();
+      const company = document.getElementById('company').value.trim();
+      const country = document.getElementById('country').value.trim();
+      const phone = document.getElementById('phone').value.trim();
+      const message = document.getElementById('message').value.trim();
+
+      const subject = encodeURIComponent('Domain Offer - Greatname.com');
+      const body =
+        `Name: ${name}\n` +
+        `Email: ${email}\n` +
+        `Company: ${company || '(not provided)'}\n` +
+        `Offer (USD): ${offer}\n` +
+        `Country: ${country}\n` +
+        `Phone: ${phone || '(not provided)'}\n\n` +
+        `Message:\n${message}\n\n---\nSent from Greatname.com offer form`;
+
+      window.location.href = `mailto:domain@greatname.com?subject=${subject}&body=${encodeURIComponent(body)}`;
+    }
+
+    document.getElementById('inquiryForm').addEventListener('submit', handleSubmit);
+
+    // inquire button behaviour
+    document.getElementById('inquireBtn').addEventListener('click', function(e){
+      e.preventDefault();
+      const form = document.getElementById('inquiryForm');
+      if(window.innerWidth < 900){
+        form.scrollIntoView({behavior:'smooth', block:'center'});
+        form.querySelector('input')?.focus();
+      } else {
+        const subject = encodeURIComponent('Domain Offer - Greatname.com');
+        const body = encodeURIComponent('Hi — I would like to make an offer for Greatname.com. Please reply with transfer instructions and next steps.');
+        window.location.href = `mailto:domain@greatname.com?subject=${subject}&body=${body}`;
+      }
+    });
+  </script>
+</body>
+</html>
